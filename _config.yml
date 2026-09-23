@@ -1,1 +1,2 @@
 title: VR Project Hub
+include: [ "*.dll" ]
