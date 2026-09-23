@@ -1,13 +1,17 @@
----
-layout: default
-title: Home
----
-
-# Welcome to my VR Project Hub
-
-This text is being generated dynamically using my own layout skeleton! 
-
-### Project Updates:
-* Project configuration initialized successfully
-* Custom Dark-mode base layout applied
-* Markdown integration live
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+</head>
+<body style="font-family: sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 0;">
+    <header style="background-color: #161b22; padding: 30px; border-bottom: 1px solid #30363d; text-align: center;">
+        <h1 style="color: #58a6ff; margin: 0;">{{ site.title }}</h1>
+        <p style="color: #8b949e; margin: 5px 0 0 0;">Custom VR Project Environment</p>
+    </header>
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; white-space: pre-wrap;">
+        {{ content }}
+    </main>
+</body>
+</html>
